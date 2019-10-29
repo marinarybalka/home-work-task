@@ -7,19 +7,42 @@ import io.qameta.allure.Step;
  */
 public class DayInWordChecker {
 
-    @Step
     public String getDayIfElse(int number) {
-        //        TODO implements result
-        String result = "";
-
-        return result;
+        if (number == 1) {
+            return "Monday";
+        } else if (number == 2) {
+            return "Tuesday";
+        } else if (number == 3) {
+            return "Wednesday";
+        } else if (number == 4) {
+            return "Thursday";
+        }  else if (number == 5) {
+            return "Friday";
+        }  else if (number == 6) {
+            return "Saturday";
+        }  else if (number == 7) {
+            return "Sunday";
+        }
+        return "Not a valid day";
     }
 
-    @Step
     public String getDaySwitchCase(int number) {
-        //        TODO implements result
-        String result = "";
-
-        return result;
+        switch (number) {
+            case 1:
+                return "Monday";
+            case 2:
+                return "Tuesday";
+            case 3:
+                return "Wednesday";
+            case 4:
+                return "Thursday";
+            case 5:
+                return "Friday";
+            case 6:
+                return "Saturday";
+            case 7:
+                return "Sunday";
+        }
+        return "Not a valid day";
     }
 }

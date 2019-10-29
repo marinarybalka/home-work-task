@@ -7,12 +7,12 @@ import io.qameta.allure.Step;
  */
 public class PassFailChecker {
 
-    @Step
-    public String checkNumber(int number) {
-
-//        TODO implements result
-        String result = "";
-
-        return result;
+    public static String checkNumber(int mark) {
+        System.out.println("DONE");
+        if(mark >= 50) {
+            return "PASS";
+        } else {
+            return "FAIL";
+        }
     }
 }

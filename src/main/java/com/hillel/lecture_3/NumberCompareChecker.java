@@ -7,12 +7,14 @@ import io.qameta.allure.Step;
  */
 public class NumberCompareChecker {
 
-    @Step
     public String getGreatestNumber(int a, int b) {
+        if (a > b){
+            return "Number " + a+ " has greatest value!";
+        }
+        if (b > a){
+            return "Number " + b+ " has greatest value!";
+        }
 
-//        TODO implements result
-        String result = "";
-
-        return result;
+        return "Numbers "+ a+" and "+ b+" are equals!";
     }
 }

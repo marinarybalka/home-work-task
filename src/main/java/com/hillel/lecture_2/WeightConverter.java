@@ -7,18 +7,22 @@ import io.qameta.allure.Step;
  */
 public class WeightConverter {
 
-    @Step
-    public double kilogramsToPounds(double kilograms) {
-//        TODO implements result
-        double result = 0.0;
-        return result;
+    public static void main(String[] args) {
+        WeightConverter.kilogramsToPounds(10);
+        WeightConverter.poundsToKilograms(25);
+
     }
 
-    @Step
-    public double poundsToKilograms(double pounds) {
-//        TODO implements result
-        double result = 0.0;
-        return result;
+    public static double kilogramsToPounds(double kilograms) {
+        double pounds = kilograms * 2.20462;
+        System.out.println(pounds +" pounds = " + kilograms + " kilograms");
+        return pounds;
+    }
+
+    public static double poundsToKilograms(double pounds) {
+        double kilograms = pounds / 2.2046;
+        System.out.println(kilograms +" kilograms = " + pounds + " pounds");
+        return kilograms;
     }
 
 }

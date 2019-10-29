@@ -7,21 +7,33 @@ import io.qameta.allure.Step;
  */
 public class SortingChecker {
 
-    @Step
     public int[] fromMinToMax(int[] values) {
-
-//        TODO implements result
-        int[] result = new int[0];
-
-        return result;
+        for (int i = 0; i < values.length; i++) {
+            for (int j = 0; j < values.length - 1; j++) {
+                int a = values[j];
+                int b = values[j + 1];
+                if (b < a) {
+                    values[j] = b;
+                    values[j + 1] = a;
+                }
+            }
+        }
+        return values;
     }
 
-    @Step
     public int[] fromMaxToMin(int[] values) {
 
-//        TODO implements result
-        int[] result = new int[0];
+        for (int i = 0; i < values.length; i++) {
 
-        return result;
+            for (int j = 0; j < values.length - 1; j++) {
+                int a = values[j];
+                int b = values[j + 1];
+                if (b > a) {
+                    values[j] = b;
+                    values[j + 1] = a;
+                }
+            }
+        }
+        return values;
     }
 }

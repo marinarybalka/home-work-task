@@ -7,12 +7,13 @@ import io.qameta.allure.Step;
  */
 public class OddEvenChecker {
 
-    @Step
-    public String checkNumber(int number) {
-
-//        TODO implements result
-        String result = "";
-
-        return result;
+    public static String checkNumber(int mark) {
+        System.out.println("BUY");
+        if(mark % 2 == 0) {
+            return "Even Number";
+        } else {
+            return "Odd Number";
+        }
     }
+
 }

@@ -6,19 +6,23 @@ import io.qameta.allure.Step;
  * Created by alpa on 10/17/19
  */
 public class SpeedConverter {
-
-    @Step
-    public double speedKmToMi(double speedKm) {
-//        TODO implements result
-        double result = 0.0;
-        return result;
+    public static void main(String[] args) {
+        SpeedConverter.speedKmToMi(4);
+        SpeedConverter.speedMiToKm(7);
     }
 
-    @Step
-    public double speedMiToKm(double speedMi) {
-//        TODO implements result
-        double result = 0.0;
-        return result;
+    public static double speedKmToMi(double milesPerHour) {
+        double kilometresPerHour = milesPerHour * 0.6214;
+
+        System.out.println(kilometresPerHour +" KilometresPerHour = " + milesPerHour + " MilesPerHour");
+        return kilometresPerHour;
+    }
+
+    public static double speedMiToKm(double kilometresPerHour) {
+        double milesPerHour = kilometresPerHour / 0.6214;
+
+        System.out.println(milesPerHour +" MilesPerHour = " + kilometresPerHour + " KilometersPerHour");
+        return milesPerHour;
     }
 
 }

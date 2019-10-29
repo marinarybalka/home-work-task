@@ -7,24 +7,28 @@ import io.qameta.allure.Step;
  */
 public class TemperatureConverter {
 
-    @Step
-    public double celsiusToFahrenheit(double celsius) {
-//       TODO implements result Convert Celsius to Fahrenheit
-        double result = 0.0;
-        return result;
+    public static void main(String[] args) {
+        TemperatureConverter.celsiusToFahrenheit(10);
+        TemperatureConverter.fahrenheitToCelsius(122);
+        TemperatureConverter.celsiusToKelvin(5);
     }
 
-    @Step
-    public double fahrenheitToCelsius(double fahrenheit) {
-//        TODO implements result convert Fahrenheit to Celsius
-        double result = 0.0;
-        return result;
+    public static double celsiusToFahrenheit(double celsius) {
+        double fahrenheit = (9d / 5d) * celsius + 32;
+        System.out.println(celsius +" ºC = " + fahrenheit + " ºF");
+        return fahrenheit;
     }
 
-    @Step
-    public double celsiusToKelvin(double celsius) {
-//        TODO implements result convert Celsius to Kelvin
-        double result = 0.0;
-        return result;
+    public static double fahrenheitToCelsius(double fahrenheit) {
+        double celsius = (5d / 9d) * (fahrenheit - 32);
+        System.out.println(fahrenheit +" ºF = " + celsius + " ºC");
+        return celsius;
     }
+
+    public static double celsiusToKelvin(double celsius) {
+        double kalvin = 273.16 + celsius;
+        System.out.println(celsius +" ºF = " + kalvin + " ºC");
+        return kalvin;
+    }
+
 }
