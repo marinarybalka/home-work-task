@@ -7,6 +7,7 @@ import io.qameta.allure.Step;
  */
 public class NumberInWordChecker {
 
+    @Step
     public String getNumberIfElse(int number) {
         if (number == 1) {
             return "ONE";

@@ -1,7 +1,10 @@
 package com.hillel.lecture_4;
 
+import io.qameta.allure.Step;
+
 public class ForContinueLoopExample {
 
+    @Step
     public static void main(String[] args) {
         String[] students = {"Steve", "Igor", "Anna", "Victor", "Bob"};
 

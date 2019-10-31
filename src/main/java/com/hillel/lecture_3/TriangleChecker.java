@@ -7,6 +7,7 @@ import io.qameta.allure.Step;
  */
 public class TriangleChecker {
 
+    @Step
     public String isTriangleIsosceles(int a, int b, int c) {
 
         String result = "";

@@ -7,6 +7,7 @@ import io.qameta.allure.Step;
  */
 public class WeightConverter {
 
+    @Step
     public static void main(String[] args) {
         WeightConverter.kilogramsToPounds(10);
         WeightConverter.poundsToKilograms(25);

@@ -8,6 +8,7 @@ import io.qameta.allure.Step;
 public class DiscountCountChecker {
 
 
+    @Step
     public double checkDiscountCount(double price) {
 
         double result;

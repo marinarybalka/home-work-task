@@ -7,6 +7,7 @@ import io.qameta.allure.Step;
  */
 public class BelongsToIntervalChecker {
 
+    @Step
     public String checkNumberInInterval(int from, int to, int number) {
 
         String result = "";

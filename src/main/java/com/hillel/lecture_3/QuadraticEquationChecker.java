@@ -7,6 +7,7 @@ import io.qameta.allure.Step;
  */
 public class QuadraticEquationChecker {
 
+    @Step
     public String checkQuadraticEquation(double a, double b, double c) {
 
         String result = "";

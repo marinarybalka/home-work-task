@@ -7,6 +7,7 @@ import io.qameta.allure.Step;
  */
 public class DayInWordChecker {
 
+    @Step
     public String getDayIfElse(int number) {
         if (number == 1) {
             return "Monday";

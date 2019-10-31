@@ -7,6 +7,7 @@ import io.qameta.allure.Step;
  */
 public class MaxMinAverageChecker {
 
+    @Step
     public int getMaxNumber(int a, int b , int c) {
 
         int result;
@@ -26,6 +27,7 @@ public class MaxMinAverageChecker {
         return result;
     }
 
+    @Step
     public int getAverageNumber(int a, int b , int c) {
 
         int result;

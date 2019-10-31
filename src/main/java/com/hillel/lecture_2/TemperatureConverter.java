@@ -7,6 +7,8 @@ import io.qameta.allure.Step;
  */
 public class TemperatureConverter {
 
+
+    @Step
     public static void main(String[] args) {
         TemperatureConverter.celsiusToFahrenheit(10);
         TemperatureConverter.fahrenheitToCelsius(122);

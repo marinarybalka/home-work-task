@@ -6,6 +6,8 @@ import io.qameta.allure.Step;
  * Created by alpa on 10/17/19
  */
 public class SpeedConverter {
+
+    @Step
     public static void main(String[] args) {
         SpeedConverter.speedKmToMi(4);
         SpeedConverter.speedMiToKm(7);

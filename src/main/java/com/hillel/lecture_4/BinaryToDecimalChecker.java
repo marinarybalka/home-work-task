@@ -17,3 +17,4 @@ public class BinaryToDecimalChecker {
         return Integer.parseInt(Integer.toString(value),2);
     }
 }
+

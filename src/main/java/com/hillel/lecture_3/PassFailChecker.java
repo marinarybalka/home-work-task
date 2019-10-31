@@ -7,6 +7,7 @@ import io.qameta.allure.Step;
  */
 public class PassFailChecker {
 
+    @Step
     public static String checkNumber(int mark) {
         System.out.println("DONE");
         if(mark >= 50) {

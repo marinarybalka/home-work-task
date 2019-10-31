@@ -7,6 +7,7 @@ import io.qameta.allure.Step;
  */
 public class SquareAndCircleChecker {
 
+    @Step
     public String checkCircleInSquare(double circleArea, double squareArea) {
 
         String result = "";

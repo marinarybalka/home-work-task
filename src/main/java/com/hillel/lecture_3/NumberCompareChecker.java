@@ -7,6 +7,7 @@ import io.qameta.allure.Step;
  */
 public class NumberCompareChecker {
 
+    @Step
     public String getGreatestNumber(int a, int b) {
         if (a > b){
             return "Number " + a+ " has greatest value!";

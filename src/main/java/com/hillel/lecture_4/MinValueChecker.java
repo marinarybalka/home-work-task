@@ -7,6 +7,7 @@ import io.qameta.allure.Step;
  */
 public class MinValueChecker {
 
+    @Step
     public int getValue(int[] values) {
         int min = values[0];
         for (int i = 0; i < values.length; i++) {
@@ -18,4 +19,5 @@ public class MinValueChecker {
     }
 
 }
+
 

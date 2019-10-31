@@ -7,6 +7,7 @@ import io.qameta.allure.Step;
  */
 public class MagnitudeChecker {
 
+    @Step
     public String getGreatestNumberByMagnitude(double a, double b) {
         String result = "";
 

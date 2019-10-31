@@ -7,6 +7,7 @@ import io.qameta.allure.Step;
  */
 public class OddEvenChecker {
 
+    @Step
     public static String checkNumber(int mark) {
         System.out.println("BUY");
         if(mark % 2 == 0) {

@@ -7,7 +7,7 @@ import io.qameta.allure.Step;
  */
 public class DistanceConverter {
 
-
+    @Step
     public static void main(String[] args) {
         DistanceConverter.metersToInches(50);
         DistanceConverter.inchesToMeters(10);
@@ -16,6 +16,7 @@ public class DistanceConverter {
 
     }
 
+    @Step
     public static double metersToInches(double metrs) {
         double inches = metrs * 39.37;
         System.out.println(metrs +" metrs = " + inches + " inches");
