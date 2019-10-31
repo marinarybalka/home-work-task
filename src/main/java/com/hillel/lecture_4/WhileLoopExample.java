@@ -13,8 +13,8 @@ public class WhileLoopExample {
 //
 //        }
 
-           int min = 1;
-           int max = 10;
+        int min = 1;
+        int max = 10;
 
 //        while (min <= max) {
 //            System.out.println("min:" + min + ", max: " + max);

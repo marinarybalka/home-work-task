@@ -1,6 +1,7 @@
 package com.hillel.lecture_4;
 
 public class ForContinueLoopExample {
+
     public static void main(String[] args) {
         String[] students = {"Steve", "Igor", "Anna", "Victor", "Bob"};
 

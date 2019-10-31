@@ -12,7 +12,7 @@ public class ArrayMain {
 
         System.out.println("elementTwo:" + elementTwo);
 
-       // int elementSeven = salary [6];
+        // int elementSeven = salary [6];
 
         salary [1] = 7;
         int elementTwoNew = salary [1];

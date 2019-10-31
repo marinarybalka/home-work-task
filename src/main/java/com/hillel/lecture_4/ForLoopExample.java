@@ -1,6 +1,7 @@
 package com.hillel.lecture_4;
 
 public class ForLoopExample {
+
     public static void main(String[] args) {
         String[] students = {"Steve", "Igor", "Anna", "Victor", "Bob"};
 //        System.out.println(students [0]);
