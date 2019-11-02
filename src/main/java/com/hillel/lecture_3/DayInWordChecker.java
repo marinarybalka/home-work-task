@@ -47,3 +47,4 @@ public class DayInWordChecker {
         return "Not a valid day";
     }
 }
+

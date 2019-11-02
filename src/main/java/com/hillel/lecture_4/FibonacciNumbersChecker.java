@@ -9,10 +9,14 @@ public class FibonacciNumbersChecker {
 
     @Step
     public int[] getFibonacciNumbers(int number) {
-
-//        TODO implements result
-        int[] result = { };
-
+        int[] result = new int[number];
+        for(int i = 0; i < result.length; i++){
+            if(i < 2){
+                result[i] = i;
+            }  else {
+                result[i] = result [i-2] + result[i-1];
+            }
+        }
         return result;
     }
 

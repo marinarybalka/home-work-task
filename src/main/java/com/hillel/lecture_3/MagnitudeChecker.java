@@ -22,3 +22,5 @@ public class MagnitudeChecker {
         return result;
     }
 }
+
+

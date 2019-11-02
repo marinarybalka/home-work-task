@@ -9,11 +9,7 @@ public class ReverseStringChecker {
 
     @Step
     public String getReversString(String value) {
-
-//        TODO implements result
-        String result = "";
-
-        return result;
+        return new StringBuilder(value).reverse().toString();
     }
 
 }

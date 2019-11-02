@@ -20,3 +20,4 @@ public class DivisorChecker {
         return result;
     }
 }
+
