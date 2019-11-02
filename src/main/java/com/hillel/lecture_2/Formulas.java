@@ -20,7 +20,7 @@ public class Formulas {
 
     @Step
     public static double calculate9Formula(double x) {
-        double result = 1.1f*Math.exp(-x)+Math.abs(Math.cos(Math.sqrt(Math.PI*x)))-(3f/8f);
+        double result = 1.1f * Math.exp(-x) + Math.abs(Math.cos(Math.sqrt(Math.PI * x))) - (3f / 8f);
         System.out.println(result + "- Formula 9");
         return result;
     }
@@ -48,7 +48,7 @@ public class Formulas {
 
     @Step
     public static double calculate13Formula(double x) {
-        double result = (Math.pow(Math.exp(-2 + x), (1/2)))*(1/(Math.sqrt(Math.pow(x, 2)+Math.pow(x, 4)+Math.log(Math.abs(x-3.14d)))));
+        double result = (Math.pow(Math.exp(-2d + x), 0.20f)) * (1d/(Math.sqrt(Math.pow(x, 2d) + Math.pow(x, 4d) + Math.log(Math.abs(x - Math.PI)))));
         System.out.println(result + "- Formula 13");
         return result;
     }
