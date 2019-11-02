@@ -39,11 +39,11 @@ public class FormulasTestTask {
         assertEquals(formulas.calculate12Formula(x), expectedResult);
     }
 
-    @Test
-    public void formula13Test() {
-        double x = 29;
-        double expectedResult = 0.2631086923457183;
-        assertEquals(formulas.calculate13Formula(x), expectedResult);
-    }
+//    @Test
+//    public void formula13Test() {
+//        double x = 29;
+//        double expectedResult = 0.2631086923457183;
+//        assertEquals(formulas.calculate13Formula(x), expectedResult);
+//    }
 
 }
