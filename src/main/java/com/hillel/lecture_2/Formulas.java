@@ -48,7 +48,7 @@ public class Formulas {
 
     @Step
     public static double calculate13Formula(double x) {
-        double result = (Math.pow(Math.exp(-2d + x), 0.20f)) * (1d/(Math.sqrt(Math.pow(x, 2d) + Math.pow(x, 4d) + Math.log(Math.abs(x - Math.PI)))));
+        double result = (Math.pow(Math.exp(-2 + x), 1.0 / 5.0)) * (1 / (Math.sqrt(Math.pow(x, 2) + Math.pow(x, 4) + Math.log(Math.abs(x - 3.14d)))));
         System.out.println(result + "- Formula 13");
         return result;
     }
