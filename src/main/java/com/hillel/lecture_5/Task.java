@@ -39,17 +39,7 @@ public class Task {
         }
         return result;
     }
-    public static int getRandom(int[] array) {
-        int rnd = new Random().nextInt(array.length);
-        return array[rnd];
-    }
 
-//    public static int getRandomFrom(int min, int max) {
-//        Random rnd = new Random;
-//
-//        int number = min + rnd.nextInt(max - min +1);
-//        return number;
-//    }
 }
 
 

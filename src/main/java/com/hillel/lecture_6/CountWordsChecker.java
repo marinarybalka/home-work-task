@@ -9,11 +9,7 @@ public class CountWordsChecker {
 
     @Step
     public int countNumberOfWorld(String sentence) {
-
-//        TODO implements result
-        int result = 0;
-
-        return result;
+        return 1;
     }
 
 

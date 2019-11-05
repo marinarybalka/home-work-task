@@ -9,11 +9,17 @@ public class CountWordsOfEachLengthChecker {
 
     @Step
     public int countNumberOfWorldWithLength(String sentence, int wordLength) {
-
-//        TODO implements result
-        int result = 0;
-
-        return result;
+        String[] words = sentence.split("\\s+");
+        int wordCount = 0;
+        for (int i = 0; i < words.length; i++) {
+            if (words[i].length() == wordLength) {
+                System.out.println(words[i].length());
+                System.out.println(wordLength);
+                wordCount++;
+            }
+        }
+        System.out.println(wordCount);
+        return wordCount;
     }
 
 
