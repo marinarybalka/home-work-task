@@ -22,5 +22,5 @@ public class CountWordsOfEachLengthChecker {
         return wordCount;
     }
 
-
 }
+

@@ -11,7 +11,7 @@ public class ProductCodeValidationChecker {
     @Step
     public boolean validateCode(String code) {
 
-//        TODO implements result
+
         boolean isValid = false;
 
         return isValid;

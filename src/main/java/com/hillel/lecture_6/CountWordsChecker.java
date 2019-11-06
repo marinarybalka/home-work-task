@@ -9,8 +9,6 @@ public class CountWordsChecker {
 
     @Step
     public int countNumberOfWorld(String sentence) {
-        return 1;
+        return sentence.split("\\s+").length ;
     }
-
-
 }

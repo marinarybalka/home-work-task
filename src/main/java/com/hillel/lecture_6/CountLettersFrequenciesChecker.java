@@ -20,3 +20,4 @@ public class CountLettersFrequenciesChecker {
         return "Character '" + letter + "' repeated " + letterCount + " times";
     }
 }
+

@@ -18,3 +18,4 @@ public class DecimalToHexadecimalChecker {
         return Integer.parseInt(value,16);
     }
 }
+
