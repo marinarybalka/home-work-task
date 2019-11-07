@@ -15,3 +15,4 @@ public class LetterRemovalChecker {
         return result;
     }
 }
+

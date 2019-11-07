@@ -12,3 +12,4 @@ public class CountWordsChecker {
         return sentence.split("\\s+").length ;
     }
 }
+
