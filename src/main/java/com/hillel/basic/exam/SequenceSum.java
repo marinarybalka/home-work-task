@@ -34,8 +34,18 @@ public class SequenceSum {
         String result = "";
 
         for (int i = 0; i < value + 1; i++) {
-            result = result == "" ? "" + i : result +  "+" + i;
+            // i = 0, result = ""
+            // i = 1, result = "0"
+            // i = 2, result = "0+1"
+            // i = 3, result = "0+1+2"
+            if (result == "") {
+                result = "" + i;
+            } else {
+                result = result +  "+" + i;
+            }
+            //  result = result == "" ? "" + i : result +  "+" + i;
         }
+        // i = 5, result = "0+1+2+3+4+5"
         System.out.println(result);
 
         String array[]= result.split("\\+");
