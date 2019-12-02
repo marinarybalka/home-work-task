@@ -5,6 +5,7 @@ public class PhoneUser {
     private String name;
     private IMessenger messenger;
     private DownloadFile downloadFile;
+    private SendFile sendFile;
     private String phoneModel;
 
     public PhoneUser(String name, IMessenger messenger, String phoneModel) {
@@ -13,12 +14,20 @@ public class PhoneUser {
         this.phoneModel = phoneModel;
     }
 
-    public PhoneUser(String name, IMessenger messenger, DownloadFile downloadFile) {
+    public PhoneUser(String name, IMessenger messenger, SendFile sendFile) {
         this.name = name;
         this.messenger = messenger;
-        this.downloadFile = downloadFile;
+        this.sendFile = sendFile;
     }
 
+    public void sendImage() {
+        if (sendFile == null) {
+            System.out.println("Unsupported file type");
+            return;
+        }
+        System.out.println("User " + name + " send greeting card...");
+        sendFile.send();
+    }
 
     public void fileDownload() {
         if (downloadFile == null) {
