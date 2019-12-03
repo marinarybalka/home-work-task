@@ -1,20 +1,18 @@
 package com.hillel.lecture_11.homeMessEnum;
 
-public class PhoneUser {
+public class UserHomeTask {
 
     private String name;
     private IMessenger messenger;
     private DownloadFile downloadFile;
     private SendFile sendFile;
-    private String phoneModel;
 
-    public PhoneUser(String name, IMessenger messenger, String phoneModel) {
+    public UserHomeTask(String name, IMessenger messenger) {
         this.name = name;
         this.messenger = messenger;
-        this.phoneModel = phoneModel;
     }
 
-    public PhoneUser(String name, IMessenger messenger, SendFile sendFile) {
+    public UserHomeTask(String name, IMessenger messenger, SendFile sendFile) {
         this.name = name;
         this.messenger = messenger;
         this.sendFile = sendFile;
