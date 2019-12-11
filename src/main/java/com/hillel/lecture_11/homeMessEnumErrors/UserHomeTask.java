@@ -1,4 +1,4 @@
-package com.hillel.lecture_11.homeMessEnum;
+package com.hillel.lecture_11.homeMessEnumErrors;
 
 public class UserHomeTask {
 
@@ -27,15 +27,6 @@ public class UserHomeTask {
         sendFile.send();
     }
 
-    public void fileDownload() {
-        if (downloadFile == null) {
-            System.out.println("Unsupported file type");
-            return;
-        }
-        System.out.println("User " + name + " downloads file...");
-        downloadFile.download();
-    }
-
     public void sendSmile() {
         System.out.println("User " + name + " sends smile...");
         messenger.sendEmotion();
@@ -55,9 +46,19 @@ public class UserHomeTask {
         messenger.delete();
     }
 
-    public void writeeMessage(String message) {
+    public void writeMessage(String message) {
         System.out.println("User: " + name + " writes message... ");
         messenger.writeMessage(message);
     }
+
+    public void fileDownload() {
+        if (downloadFile == null) {
+            System.out.println("Unsupported file type");
+            return;
+        }
+        System.out.println("User " + name + " downloads file...");
+        downloadFile.download();
+
+        }
 
 }

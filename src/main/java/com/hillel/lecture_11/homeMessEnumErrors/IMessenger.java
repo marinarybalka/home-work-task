@@ -1,13 +1,16 @@
-package com.hillel.lecture_11.homeMessEnum;
+package com.hillel.lecture_11.homeMessEnumErrors;
 
 public interface IMessenger {
+
 
     String writeMessage(String message);
 
     String readMessage(String message);
 
-    String sendEmotion();
+    void sendEmotion();
 
-    void delete();
+    default void delete() {
+
+    }
 
 }

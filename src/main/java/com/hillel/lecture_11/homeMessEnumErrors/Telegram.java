@@ -1,4 +1,4 @@
-package com.hillel.lecture_11.homeMessEnum;
+package com.hillel.lecture_11.homeMessEnumErrors;
 
 public class Telegram extends Messenger {
 
@@ -18,12 +18,6 @@ public class Telegram extends Messenger {
     public String readMessage(String message) {
         System.out.println("Read the message by Telegram");
         return "Read more messages by Telegram";
-    }
-
-    @Override
-    public String sendEmotion() {
-        System.out.println("Send emotion by Telegram");
-        return "More emotions by Telegram";
     }
 
     @Override

@@ -20,7 +20,7 @@ import java.lang.reflect.Array;
  * Input: -15
  * Output: -15 < 0
  * <p>
- * Input: > 0
+ * Input: = 0
  * Output: 0 = 0
  */
 

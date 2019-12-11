@@ -1,4 +1,4 @@
-package com.hillel.lecture_11.homeMessEnum;
+package com.hillel.lecture_11.homeMessEnumErrors;
 
 public class MyViber extends Messenger {
 
@@ -10,7 +10,9 @@ public class MyViber extends Messenger {
 
     @Override
     public String writeMessage(String message) {
-        System.out.println("Write the message by MyViber: " + message);
+        if (super.checkConnection()) {
+            System.out.println("Problems with connection, sending later");
+        }
         return message;
     }
 
@@ -20,11 +22,6 @@ public class MyViber extends Messenger {
         return "Read more messages by MyViber";
     }
 
-    @Override
-    public String sendEmotion() {
-        System.out.println("Send emotion by MyViber");
-        return "More emotions by MyViber";
-    }
 
     @Override
     public void delete() {

@@ -1,11 +1,11 @@
-package com.hillel.lecture_11.homeMessEnum;
+package com.hillel.lecture_11.homeMessEnumErrors;
 
 public class WhatsApp extends Messenger {
 
+
     @Override
     public void download() {
-        System.out.println("Download by WhatsApp");
-
+            System.out.println("Download by WhatsApp");
     }
 
     @Override
@@ -21,14 +21,10 @@ public class WhatsApp extends Messenger {
     }
 
     @Override
-    public String sendEmotion() {
-        System.out.println("Send emotion by WhatsApp");
-        return "More emotions by WhatsApp";
-    }
-
-    @Override
     public void delete() {
         System.out.println("Delete by WhatsApp");
     }
 
 }
+
+
