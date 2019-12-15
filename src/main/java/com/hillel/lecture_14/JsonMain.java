@@ -6,13 +6,13 @@ import java.util.Set;
 
 public class JsonMain {
 
-//    public static void main(String[] args) {
-//        User user = new User();
-//        user.setAge(30);
-//        user.setName("Bob");
-//        System.out.println(user.toString());
+    public static void main(String[] args) {
+        UserUser user = new UserUser();
+        user.setAge(30);
+        user.setName("Bob");
+        System.out.println(user.toString());
 
-//        public static String convert(User user) {
+//        public static String convert(UserUser user) {
 //            String jsonStart = "{";
 //            String jsonEnd = "}";
 //            Map<String, String> userMap = new HashMap<>();
@@ -21,5 +21,5 @@ public class JsonMain {
 //
 //            Set<Map.Entry<String, String>> entries = userMap.
 //        }
-//    }
+    }
 }

@@ -1,6 +1,9 @@
 package com.hillel.lecture_14;
 
+import com.fasterxml.jackson.core.JsonProcessingException;
+import com.fasterxml.jackson.databind.ObjectMapper;
 import java.util.List;
+
 
 /**
  * Create json converter. User object should be present in key-value pair, all field should be like Map;
@@ -18,19 +21,25 @@ public class JsonConverter {
 
 
     public String convertToJsonString(List<User> users) {
-
-//        TODO implements result
-        String result = "";
-
-        return result;
+        ObjectMapper mapper = new ObjectMapper();
+        String u = "";
+        try {
+           u = mapper.writeValueAsString(mapper.writeValueAsString(users));
+        } catch (JsonProcessingException e) {
+            e.printStackTrace();
+        }
+        return u.replace("\\", "");
     }
 
     public String convertToJsonString(User users) {
-
-//        TODO implements result
-        String result = "";
-
-        return result;
+        ObjectMapper mapper = new ObjectMapper();
+        String u = "";
+        try {
+            u = mapper.writeValueAsString(mapper.writeValueAsString(users));
+        } catch (JsonProcessingException e) {
+            e.printStackTrace();
+        }
+        return u.replace("\\", "");
     }
 
 
